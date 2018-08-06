@@ -21,12 +21,30 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="GameMain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCheck.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RandGen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="MathGame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCheck.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RandGen.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
