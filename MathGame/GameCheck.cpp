@@ -1,8 +1,8 @@
 #include "stdafx.h"
 #include "GameCheck.h"
+#include "GameMain.h"
 #include <vector>
 using namespace std;
-
 GameCheck::GameCheck()
 {
 }
@@ -33,7 +33,6 @@ void GameCheck::setStopcode(int code, int setPass)
 		GameCheck::stopCode = code;
 	}
 }
-
 int GameCheck::encrypt(int pass)
 {
 	int ipass = pass % 2 + 1;
