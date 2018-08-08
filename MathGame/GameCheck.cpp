@@ -14,10 +14,10 @@ bool GameCheck::isStop()
 	}
 	switch (GameCheck::stopCode) {
 	case 1:
-		printf("你所提交的答案错误,你失败了！\n");
+		printf("输掉了游戏的原因为提交答案错误。\n");
 		break;
 	case 2:
-		printf("内部程序出错.\n");
+		printf("没有这个难度值，请重新键入。.\n");
 		break;
 	default:
 		printf("发生了未知错误");
@@ -35,7 +35,7 @@ void GameCheck::setStopcode(int code, int setPass)
 }
 int GameCheck::encrypt(int pass)
 {
-	int ipass = pass % 2 + 1;
+	int ipass = pass / 2 + 1;
 	return ipass;
 }
 
