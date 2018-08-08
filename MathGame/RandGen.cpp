@@ -16,17 +16,17 @@ void RandGen::genRandNum(int MODE)
 
 int RandGen::getNum1()
 {
-	return RandGen::randNum1;
+	return this->randNum1;
 }
 
 int RandGen::getNum2()
 {
-	return RandGen::randNum2;
+	return this->randNum2;
 }
 
 int RandGen::getTotal()
 {
-	return RandGen::total;
+	return this->total;
 }
 
 RandGen::~RandGen()
