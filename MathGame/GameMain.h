@@ -1,4 +1,7 @@
 #pragma once
+#include "RandGen.h"
+#include "GameCheck.h"
+#include "PlaySaver.h"
 class GameMain
 {
 public:
@@ -9,5 +12,9 @@ public:
 private:
 	int GamePoint = 0;
 	void gameWhile();
+	RandGen randgen;
+	GameCheck checkEngine;
+	PlaySaver saves;
+	int RandMode;
 };
 

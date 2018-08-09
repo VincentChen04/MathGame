@@ -1,17 +1,11 @@
 #include "stdafx.h"
 #include "GameMain.h"
-#include "RandGen.h"
-#include "GameCheck.h"
-#include "PlaySaver.h"
-RandGen randgen;
-GameCheck checkEngine;
-PlaySaver saves;
-int RandMode;
 
 using namespace std;
 
 GameMain::GameMain()
 {
+	saves.init();
 	printf("您要选择哪个难度呢？\n");
 	printf("1) 菜鸟模式\t极其简单的20以内加减 \n");
 	printf("2) 普通模式\t正常人可以承受的难度\n");
@@ -33,6 +27,7 @@ void GameMain::runGame()
 
 GameMain::~GameMain()
 {
+	saves.~PlaySaver(); 
 }
 
 int GameMain::getGamePoint()

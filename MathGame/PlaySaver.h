@@ -1,10 +1,16 @@
 #pragma once
+#include <fstream>
+#include <vector>
+#include <string>
+using namespace std;
 class PlaySaver
 {
 public:
 	PlaySaver();
+	void init();
 	~PlaySaver();
 private:
-	FILE saves;
+	fstream Saves;
+	vector<string> SaveData;
 };
 
