@@ -27,7 +27,6 @@ void GameMain::runGame()
 
 GameMain::~GameMain()
 {
-	saves.~PlaySaver(); 
 }
 
 int GameMain::getGamePoint()
